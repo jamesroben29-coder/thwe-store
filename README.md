@@ -1,31 +1,64 @@
 # 🛍️ Thwe-Store
 
-A modern and responsive React e-commerce web application built with React and Vite.
+> A modern and responsive e-commerce web application built with React and Vite.
 
-Thwe-Store is a frontend-focused e-commerce project that provides a complete shopping experience including product browsing, search and filtering, cart and wishlist management, authentication, checkout, order history, and account management.
+Thwe-Store is a frontend-focused e-commerce application designed to provide a complete online shopping experience. The project includes product browsing, search and filtering, shopping cart, wishlist, user authentication, checkout, order management, and account features.
 
-> 🚧 This project is built for learning, portfolio development, and demonstrating practical React development skills.
+The project was developed to practice and demonstrate practical React development skills, component-based architecture, state management with Context API, client-side routing, responsive UI design, and frontend application workflows.
+
 
 ## 🌐 Live Demo
 
 🔗 **[View Thwe-Store Live](https://thwe-store.vercel.app/)**
 
+> **Note:** Replace `YOUR_CURRENT_LIVE_DEMO_LINK` with the same Live Demo URL you already have in your current README.
+
+
 ## ✨ Features
 
-- 🔐 User authentication with Sign Up and Sign In
-- 👤 Profile management and account settings
-- 🛍️ Product browsing and product details
-- 🔎 Product search, category filtering, and sorting
-- 🛒 Shopping cart with quantity management
-- ❤️ Wishlist management
-- 💳 Demo checkout and order placement
-- 📦 Order history and order details
-- 🚚 Shipping method and shipping cost calculation
-- 🏷️ Discount coupon support
-- 💾 LocalStorage-based data persistence
-- 📱 Responsive design for desktop, tablet, and mobile
-- 🛡️ Protected profile route
-- 🚪 Logout functionality
+### 🛍️ Shopping Experience
+- Browse products by category
+- Product details with pricing, ratings, and availability
+- Product search, category filtering, and sorting
+- Responsive product grid and modern UI
+
+### 🛒 Cart & Wishlist
+- Add products to cart
+- Increase and decrease product quantities
+- Remove items from cart
+- Automatic subtotal, shipping, and total calculation
+- Add and remove products from wishlist
+- Add wishlist items directly to cart
+
+### 🔐 Authentication & Account
+- User Sign Up and Sign In
+- Client-side authentication with Context API
+- Persistent user session using Local Storage
+- Protected profile route
+- Edit and update profile information
+- Logout functionality
+- Account settings
+
+### 💳 Checkout & Orders
+- Checkout form with customer and shipping information
+- Delivery and pickup shipping options
+- Shipping cost calculation
+- Discount coupon support
+- Terms and conditions validation
+- Demo order placement flow
+- Order history
+- Order details with customer, shipping, and payment summary
+
+### 🎨 UI & UX
+- Fully responsive design
+- Reusable React components
+- Context API for shared application state
+- Client-side routing with React Router
+- Interactive navigation and dropdown menus
+- Toast notifications and confirmation dialogs
+- Scroll reveal animations
+- Lucide React and React Icons
+
 
 ## 🛠️ Tech Stack
 
