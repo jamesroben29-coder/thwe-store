@@ -1,6 +1,5 @@
-import React from 'react';
 import { Calendar,CircleCheck,ChevronUp , Package, ClipboardList , Truck, Wallet, MoveRight } from 'lucide-react';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../context/useCart';
 import { useNavigate } from 'react-router-dom';
 
 const OrderHistory = () => {

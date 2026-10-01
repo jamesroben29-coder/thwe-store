@@ -1,4 +1,3 @@
-import React from 'react'
 import AboutHeader from '../components/AboutFiles/AboutHeader';
 import AboutStatistics from '../components/AboutFiles/AboutStatistics';
 import AboutMission from "../components/AboutFiles/AboutMission";

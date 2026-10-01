@@ -1,7 +1,6 @@
-import React from 'react'
-import { ChevronUp , Calendar,CircleCheck,PackageCheck,MapPin, Clipboard, ClipboardList } from "lucide-react"
+import { ChevronUp , Calendar,CircleCheck,PackageCheck,MapPin, ClipboardList } from "lucide-react"
 import { useParams } from 'react-router-dom'
-import { useCart } from '../context/CartContext'
+import { useCart } from '../context/useCart'
 
 const OrderDetails = () => {
 

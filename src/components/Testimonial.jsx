@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react'
+import { useEffect } from 'react';
 import { testimonials } from '../data/products';
 import { useState } from 'react';
 import { Quote } from 'lucide-react';

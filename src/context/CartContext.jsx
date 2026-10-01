@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { createContext, useContext } from "react";
-
-const CartContext = createContext();
+import { useState, useEffect } from "react";
+import { CartContext } from "./CartContextValue";
 
 export const CartProvider = ({ children }) => {
 
@@ -9,7 +7,7 @@ export const CartProvider = ({ children }) => {
     try {
       const savedCart = localStorage.getItem("thwe-store-cart");
       return savedCart ? JSON.parse(savedCart) : [];
-    } catch (error) {
+    } catch {
       return [];
     }
   });
@@ -121,9 +119,4 @@ export const CartProvider = ({ children }) => {
       {children}
     </CartContext.Provider>
   );
-};
-
-
-export const useCart = () => {
-  return useContext(CartContext);
 };

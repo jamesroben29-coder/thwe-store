@@ -1,5 +1,4 @@
-import React from "react";
-import { useWishlist } from "../context/WishlistContext";
+import { useWishlist } from "../context/useWishlist";
 import {
   House,
   Heart,
@@ -8,7 +7,7 @@ import {
   ShoppingCart,
   Truck,
 } from "lucide-react";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/useCart";
 
 const Wishlist = () => {
   const { wishlistItems, removeFromWishlist } = useWishlist();

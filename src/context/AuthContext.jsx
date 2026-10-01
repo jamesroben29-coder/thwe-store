@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createContext, useContext } from 'react'
 
 const AuthContext = createContext();
@@ -11,12 +11,13 @@ export const AuthProvider = ({children}) => {
             const data = localStorage.getItem("currentUser");
             return data ? JSON.parse(data) : null;
 
-        }catch(error){
+        }catch{
             return null;
         }
     });
 
-    const userObject = {
+    const signUp = (userData) => {
+       const userObject = {
         id : Date.now(),
         name : "",
         email : "",
@@ -24,8 +25,6 @@ export const AuthProvider = ({children}) => {
         address : "",
         password : ""
     }
-
-    const signUp = (userData) => {
        const mergeData = { ...userObject , ...userData };
 
         if(userData){
@@ -75,6 +74,8 @@ export const AuthProvider = ({children}) => {
   )
 }
 
+// This context hook is intentionally exported alongside its provider.
+// eslint-disable-next-line react-refresh/only-export-components
 export const useAuth = () => {
     return useContext(AuthContext);
 };

@@ -1,4 +1,3 @@
-import React from 'react';
 import Hero from '../components/Hero';
 import Servicses from "../components/Servicses";
 import ProductList from '../components/ProductList';

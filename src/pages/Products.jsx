@@ -1,7 +1,7 @@
-import React, { useContext, useEffect } from 'react'
+import { useEffect } from 'react';
 import ProductList from '../components/ProductList';
 import NewProducts from "../components/NewProducts";
-import { useSearch } from '../context/SearchContext';
+import { useSearch } from '../context/useSearch';
 import { products } from "../data/products";
 import ScrollReveal from "../context/ScrollReveal";
 import { useSearchParams } from "react-router-dom";

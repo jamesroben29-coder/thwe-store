@@ -1,5 +1,5 @@
 import { useAuth } from "../context/AuthContext";
-import React ,{ useEffect, useState } from "react";
+import { useState } from "react";
 
 import {
   User, Mail, Phone,
@@ -11,29 +11,23 @@ import {
 const AccountSetting = () => {
 
   const { currentUser, setCurrentUser } = useAuth();
-  const [formData, setFormData] = useState({
-      name: "",
-      email: "",
-      phone: "",
-      address: "",
+  const getFormData = (user) => ({
+      name: user?.name || "",
+      email: user?.email || "",
+      phone: user?.phone || "",
+      address: user?.address || "",
     });
+  const [formData, setFormData] = useState(() => getFormData(currentUser));
+  const [previousUser, setPreviousUser] = useState(currentUser);
+
+  if (currentUser !== previousUser) {
+    setPreviousUser(currentUser);
+    setFormData(getFormData(currentUser));
+  }
 
     const [showCurrentPassword, setShowCurrentPassword] = useState(false);
     const [showNewPassword, setShowNewPassword] = useState(false);
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-
-    useEffect(() => {
-
-      if(currentUser){
-          setFormData({
-            name : currentUser.name || "",
-            email : currentUser.email || "",
-            phone : currentUser.phone || "",
-            address : currentUser.address || "",
-          });
-      }
-
-    },[currentUser]);
 
     const handleInputSet = (e) => {
         const { name , value } = e.target;

@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link , useNavigate } from "react-router-dom";
-import Cart from "../pages/Cart";
-import { useCart } from "../context/CartContext";
-import { useWishlist } from "../context/WishlistContext";
+import { useCart } from "../context/useCart";
+import { useWishlist } from "../context/useWishlist";
 import { useAuth } from "../context/AuthContext";
-import { useSearch } from "../context/SearchContext";
+import { useSearch } from "../context/useSearch";
 
 import {
   ShoppingBag,

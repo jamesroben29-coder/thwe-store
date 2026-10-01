@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Truck, Package, Ticket, LockKeyhole } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/useCart";
 import { useAuth } from "../context/AuthContext";
 
 const Checkout = () => {

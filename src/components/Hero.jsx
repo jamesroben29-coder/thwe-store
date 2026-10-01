@@ -1,4 +1,3 @@
-import React from 'react'
 import { Headset, ShieldCheck, Truck ,MoveRight} from "lucide-react";
 import HeroImg from "../assets/images/Eco-image.png";
 import { Link } from "react-router-dom";

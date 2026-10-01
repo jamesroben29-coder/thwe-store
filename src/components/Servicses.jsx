@@ -1,4 +1,3 @@
-import React from 'react'
 import { Award, HeadsetIcon, PackageSearch, UserRoundCog } from 'lucide-react';
 import { Link } from "react-router-dom"
 

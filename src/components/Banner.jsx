@@ -1,5 +1,4 @@
 
-import React from 'react'
 import AdsLady from "../assets/images/ads-lady2.png";
 import { Link } from 'react-router-dom';
 

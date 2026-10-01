@@ -1,6 +1,4 @@
-import React from 'react'
 import ProductCard from './ProductCard';
-import { products } from "../data/products"
 import "./components.css";
 
 const ProductList = ({filteredProducts}) => {

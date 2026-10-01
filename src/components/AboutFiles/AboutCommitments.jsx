@@ -1,5 +1,4 @@
 
-import React from 'react'
 import { Sparkles, Recycle ,RotateCw, Crosshair} from "lucide-react";
 import "./AboutDatas.css";
 

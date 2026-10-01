@@ -1,5 +1,4 @@
 
-import React from 'react'
 import { Mail , PhoneCall , MessageSquareDot } from "lucide-react"
 import "./Contact.css";
 

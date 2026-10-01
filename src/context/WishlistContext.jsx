@@ -36,10 +36,8 @@
 
 
 
-import React, { useState, useEffect } from "react";
-import { createContext, useContext } from "react";
-
-const WishlistContext = createContext();
+import { useState, useEffect } from "react";
+import { WishlistContext } from "./WishlistContextValue";
 
 const WishlistProvider = ({ children }) => {
 
@@ -47,7 +45,7 @@ const WishlistProvider = ({ children }) => {
         try {
             const savedWishlist = localStorage.getItem("thwe-store-wishlist");
             return savedWishlist ? JSON.parse(savedWishlist) : [];
-        } catch (error) {
+        } catch {
             return [];
         }
     });
@@ -99,8 +97,4 @@ const WishlistProvider = ({ children }) => {
 };
 
 
-const useWishlist = () => {
-    return useContext(WishlistContext);
-};
-
-export { WishlistProvider, useWishlist };
+export { WishlistProvider };

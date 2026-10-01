@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
-import { useWishlist } from "../context/WishlistContext";
+import { useWishlist } from "../context/useWishlist";
 
 import {
   UserRound, Mail, Phone, MapPin, Pencil,
   ShoppingBag, Heart, ShoppingCart,
 } from "lucide-react";
 
-import { useCart } from "../context/CartContext";
+import { useCart } from "../context/useCart";
 
 
 const Profile = () => {

@@ -1,5 +1,4 @@
 
-import React from 'react'
 import "./AboutDatas.css";
 
 const AboutJourney = () => {

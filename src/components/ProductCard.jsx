@@ -1,8 +1,7 @@
-import React from "react";
 import { Star, Heart, ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useCart } from "../context/CartContext";
-import { useWishlist } from "../context/WishlistContext";
+import { useCart } from "../context/useCart";
+import { useWishlist } from "../context/useWishlist";
 
 const ProductCard = ({ product }) => {
   const { addToCart } = useCart();

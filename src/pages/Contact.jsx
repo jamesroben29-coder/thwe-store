@@ -1,4 +1,3 @@
-import React from 'react'
 import ContactHeader from "../components/ContactFiles/ContactHeader";
 import ContactMessage from "../components/ContactFiles/ContactMessage";
 import ContactLocation from "../components/ContactFiles/ContactLocation";
