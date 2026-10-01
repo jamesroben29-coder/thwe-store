@@ -1,0 +1,312 @@
+.about-header{
+    padding:0 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-header-text{
+    max-width: 750px;
+}
+
+.about-header h1{
+    font-size: clamp(2.3rem , 4vw, 4rem);
+    color: var(--text-white);
+    margin-bottom: 30px;
+}
+
+.about-header p{
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: var(--text-white);
+    font-family: var(--font-family4);
+    
+}
+
+.about-learn-more{
+    border: 1px solid var(--text-white);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 6px;
+    transition: .4s ease;
+}
+
+.about-learn-more-btn{
+    text-decoration: none;
+    color: var(--text-white);
+}
+
+.about-learn-more:hover{
+    background: var(--primary);
+    border: 1px solid transparent;
+}
+
+/* About Statistics Styling */
+.about-statistics-box{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    border-bottom: 1px solid var(--border);
+
+}
+
+.about-statistics{
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-statistics h1{
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--primary);
+}
+
+.about-statistics p{
+    color: var(--text-secondary);
+    letter-spacing: .5px;
+}
+
+
+/* About Mission Styling */
+.about-mission-container{
+    padding: 40px;
+    border-bottom: 1px solid var(--border);
+}
+
+.about-mission-container .mission-header{
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.about-mission-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.mission-left{
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mission-left h2{
+    font-size: clamp(1.5rem , 3vw, 2.2rem);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+.mission-left .mission-text{
+    margin-bottom: 10px;
+    font-size: clamp(1rem , 3vw, 1.2rem);
+    letter-spacing: .4px;
+}
+
+
+.mission-right{
+    width: 100%;
+}
+
+.mission-right .mission-img-box{
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.mission-img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* AboutCommitments Styling */
+.about-commitments-container{
+    padding: 40px;
+}
+
+.about-commitments-container h3{
+    text-align: center;
+    letter-spacing: .5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+.about-commitments-container h2{
+    text-align: center;
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 40px;
+}
+
+.about-commitments-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.about-commitments-card{
+    border: 1px solid var(--border);
+    padding: 30px;
+    transition: .4s ease;
+    border-radius: 10px;
+}
+
+.about-commitments-card:hover{
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+.about-commitments-card .commit-icon{
+    font-size: 4rem;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    color: var(--text-primary);
+}
+
+.about-commitments-card h4{
+    font-size: clamp(1.1rem , 3vw , 1.3rem);
+    margin-bottom: 5px;
+}
+
+.about-commitments-card p{
+    letter-spacing: .5px;
+    color: var(--text-secondary);
+}
+
+
+/* About Page Styling */
+.about-journey-container {
+    padding: 60px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.about-journey-container h3 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.about-journey-container h2 {
+    text-align: center;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 60px;
+    letter-spacing: -0.5px;
+}
+
+.about-journey-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    margin-left: 40px; 
+    padding: 0;
+}
+
+.about-journey-list::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;      
+    bottom: 12px;      
+    width: 2px;
+    background-color: var(--text-secondary);
+    z-index: 1;
+}
+
+.about-journey-card {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 35px;
+    position: relative;
+}
+
+.about-journey-card .journey-timeline-dot {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 6px;
+    left: -4px;
+    background-color: var(--text-secondary);
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 0 8px var(--text-muted); 
+
+}
+
+.about-journey-card:last-child .journey-timeline-dot {
+    width: 12px;
+    height: 12px;
+    left: -5px;
+    top: 5px;
+    background-color:var(--text-primary);
+    border: 3px solid var(--border); 
+    box-shadow: 0 0 0 8px var(--blue-secondary); 
+}
+
+.journey-timeline-year {
+    font-weight: 600;
+    color: var(--text-secondary);
+    min-width: 70px;
+    font-size: 1rem;
+}
+
+.about-journey-card:last-child .journey-timeline-year {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.journey-timeline-text {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.about-journey-card:last-child .journey-timeline-text {
+    color: var(--text-primary);
+}
+
+
+
+
+
+
+
+@media (max-width: 990px){
+    .about-mission-list{
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 30px;
+    }
+
+    .about-commitments-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+
+}

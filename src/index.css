@@ -1,0 +1,61 @@
+:root {
+  
+  /* Font-Family */
+  --font-family1 : sans-serif;
+  --font-family2 : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-family3 : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --font-family4 : 'Courier New', Courier, monospace;
+
+  /* Brand */
+  --primary: #2563EB;
+  --primary-hover: #1D4ED8;
+  --primary-light: #EFF6FF;
+  --text-white : #FFFFFF;
+  --blue-secondary : #1e293b;
+  
+
+  /* Text */
+  --text-primary: #111827;
+  --text-secondary: #4B5563;
+  --text-muted: #6B7280;
+
+  /* Background */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8FAFC;
+  --bg-soft: #F1F5F9;
+
+
+
+  /* Border */
+  --border: #E5E7EB;
+  --border-light: #F1F5F9;
+
+  /* Status */
+  --success: #16A34A;
+  --success-light: #F0FDF4;
+
+  --danger: #EF4444;
+  --danger-light: #FEF2F2;
+  --danger-error : #e69090;
+
+  --warning: #F59E0B;
+  --warning-light: #FFFBEB;
+
+  /* Hero */
+  --hero-start: #EFF6FF;
+  --hero-end: #DBEAFE;
+
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(70px);
+  transition:
+    opacity 1.5s ease,
+    transform 1.5s ease;
+}
+
+.scroll-reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}

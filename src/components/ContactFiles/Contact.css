@@ -1,0 +1,412 @@
+.contact-header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-header-text{
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 750px;
+}
+
+.contact-header-text h1{
+    color: var(--text-white);
+    font-size: clamp(2.5rem , 4vw, 3.5rem);
+    padding: 20px 0;
+    
+}
+
+.contact-header-text p{
+    color: var(--text-white);
+    opacity: .8;
+    margin-bottom: 30px;
+    font-size: clamp(1rem, 3vw, 1.1rem);
+    font-family: var(--font-family4);
+    line-height: 1.5;
+}
+
+.contact-talk-btn-box{
+    border: 1px solid var(--text-white);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 6px;
+    transition: .4s ease;
+}
+
+.contact-talk-btn{
+    text-decoration: none;
+    color: var(--text-white);
+    
+}
+
+.contact-talk-btn-box:hover{
+    background: var(--primary);
+    border: 1px solid transparent;
+}
+
+/* Contact Message  */
+.contact-message-box{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    gap: 40px;
+}
+
+.contact-message-left{
+    border: 1px solid var(--border);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.09);
+}
+
+.message-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name-and-mail-group{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.name-and-mail-group label{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.name-and-mail-group label input{
+    width: 100%;
+    height: 48px;
+    padding: 0 14px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.name-and-mail-group label input:focus{
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.message-form .message-option-label{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.message-option-label select{
+    width: 100%;
+    height: 48px;
+    padding: 0 14px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.message-option-label select:focus{
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.textarea-message{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+
+.textarea-message textarea{
+    width: 100%;
+    min-height: 110px;
+    padding: 14px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 14px;
+    outline: none;
+    resize: vertical;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.textarea-message textarea:focus{
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.characters-count{
+    color: var(--text-secondary);
+}
+
+.message-btn{
+    padding: 10px 0;
+    font-size: 1rem;
+    border: 1px solid var(--primary);
+    background: var(--primary);
+    color: var(--text-white);
+    border-radius: 5px;
+    transition: .4s ease;
+}
+
+.message-btn:hover{
+    background: var(--primary-hover);
+}
+
+.contact-message-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-message-card{
+    border: 1px solid var(--border);
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .4s ease;
+}
+
+.contact-message-card:hover{
+    box-shadow: 0 10px 25px rgba(0,0,0,0.09);
+}
+
+.contact-message-card h4{
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.contact-message-text p{
+    color: var(--text-secondary);
+}
+
+.contact-message-text small{
+    color: var(--text-secondary);
+}
+
+.contact-message-card:last-child{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    background: var(--text-primary);
+    opacity: .9;
+    border-radius: 10px;
+    color: var(--text-secondary);
+}
+
+
+
+.contact-message-social-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: .5px;
+    font-size: .8rem;
+    color: var(--text-white);
+}
+
+/* Contact Location Styling */
+.contact-location-container{
+    padding: 40px;
+}
+
+.contact-location-container .location-head-p{
+    color: var(--text-secondary);
+    font-size: .9rem;
+}
+
+.contact-location-container .location-head-h2{
+    margin-bottom: 40px;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.location-card-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.location-card{
+    border: 1px solid var(--border);
+    width: 100%;
+    padding: 0 0 15px;
+    border-radius: 10px;
+    transition: .4s ease;
+}
+
+.location-card:hover{
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.location-img-box{
+    border-radius: 10px 10px 0 0;
+    height: 240px;
+    margin-bottom: 10px;
+}
+
+.location-img-box img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.location-text{
+    padding: 0 15px;
+}
+
+.location-card h4{
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-city-street{
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-city-street p{
+    font-size: .9rem;
+    line-height: 1.5;
+    letter-spacing: .5px;
+}
+
+.loaction-time-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    letter-spacing: .5px;
+}
+
+.loaction-time-group small{
+    color: var(--text-secondary);
+}
+
+/* Contact FAQ styling */
+.contact-faq-container{
+    padding: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-faq-container .faq-head-p{
+    text-align: center;
+    color: var(--text-white);
+    font-size: .9rem;
+}
+
+.contact-faq-container .faq-head-h2{
+    margin-bottom: 40px;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    text-align: center;
+    color: var(--text-white);
+}
+
+.faq-item{
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 10px;
+    background-color: var(--bg-primary);
+}
+
+.faq-question{
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 15px 0;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-toggle {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+  transition: transform 0.2s ease;
+}
+
+.faq-answer-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-out;
+}
+
+.faq-item.active .faq-answer-wrapper {
+  grid-template-rows: 1fr;
+}
+
+.faq-answer{
+    overflow: hidden;
+}
+
+.faq-answer p {
+  padding: 0 24px 24px 24px; 
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 15px;
+  border-top: 1px solid var(--border); 
+  padding-top: 16px;
+}
+
+
+@media (max-width: 990px){
+    .contact-message-box{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .name-and-mail-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location-card-group{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px){
+    .location-card-group{
+        grid-template-columns: 1fr;
+    }
+}
