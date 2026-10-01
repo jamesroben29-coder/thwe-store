@@ -2,14 +2,18 @@
 
 A modern and responsive React e-commerce web application built with React and Vite.
 
-Thwe-Store allows users to browse products, search and filter items, manage a shopping cart and wishlist, complete a demo checkout flow, and manage their account and order history.
+Thwe-Store is a frontend-focused e-commerce project that provides a complete shopping experience including product browsing, search and filtering, cart and wishlist management, authentication, checkout, order history, and account management.
 
-> 🚧 This project is a frontend-focused e-commerce application built for learning, portfolio development, and practical React experience.
+> 🚧 This project is built for learning, portfolio development, and demonstrating practical React development skills.
+
+## 🌐 Live Demo
+
+🔗 **[View Thwe-Store Live](https://thwe-store.vercel.app/)**
 
 ## ✨ Features
 
 - 🔐 User authentication with Sign Up and Sign In
-- 👤 User profile management and account settings
+- 👤 Profile management and account settings
 - 🛍️ Product browsing and product details
 - 🔎 Product search, category filtering, and sorting
 - 🛒 Shopping cart with quantity management
@@ -18,13 +22,15 @@ Thwe-Store allows users to browse products, search and filter items, manage a sh
 - 📦 Order history and order details
 - 🚚 Shipping method and shipping cost calculation
 - 🏷️ Discount coupon support
-- 📱 Responsive design for desktop, tablet, and mobile
 - 💾 LocalStorage-based data persistence
-
+- 📱 Responsive design for desktop, tablet, and mobile
+- 🛡️ Protected profile route
+- 🚪 Logout functionality
 
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - ⚛️ React
 - ⚡ Vite
 - 🧭 React Router
@@ -32,14 +38,15 @@ Thwe-Store allows users to browse products, search and filter items, manage a sh
 - 🧩 Context API
 
 ### Libraries & Tools
+
 - 🎯 Lucide React
 - 🔷 React Icons
 - 💾 LocalStorage
 - 🧹 ESLint
 - 🖥️ Git & GitHub
+- ▲ Vercel
 
-
-## 📂  Project Structure 
+## 📂 Project Structure
 
 ```text
 src/
@@ -51,16 +58,14 @@ src/
 ├── App.jsx          # Application routes
 ├── App.css          # Application styles
 ├── index.css        # Global styles
-└── main.jsx         # Application entry point 
-
-```
+└── main.jsx         # Application entry point
 
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/thwe-store.git
+git clone https://github.com/jamesroben29-coder/thwe-store.git
 
 
 ### 2. Navigate to the project directory
@@ -110,4 +115,4 @@ The application will be available at the local development URL shown in your ter
 Frontend Web Developer | React Developer
 
 - GitHub: [@jamesroben29-coder](https://github.com/jamesroben29-coder)
-- Project: [Thwe-Store](https://github.com/jamesroben29-coder)
+- Project: [Thwe-Store](https://github.com/jamesroben29-coder/thwe-store)
